@@ -4,13 +4,13 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import CartProvider from './component/CartContext';
 import RoutesPage from './Routes/RoutesPage';
-import AuthProvider from './Auth/AuthProvider';
+
 
 
 function App() {
   return (
     <BrowserRouter>
-    <AuthProvider>
+    
       <CartProvider>
         <div className='min-h-screen flex flex-col'>
           <Navber />  
@@ -23,7 +23,7 @@ function App() {
           <Footer />
         </div>
       </CartProvider>
-     </AuthProvider>
+    
     </BrowserRouter>
   );
 }

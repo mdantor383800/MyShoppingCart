@@ -2,7 +2,7 @@
 export const books = [
     {
         id: 1,
-        name: 'To Kill a Mockingbirb',
+        name: 'To Kill a Mockingbird',
         description: 'To Kill a Mockingbird is a novel about racial injustice in 1930s Alabama, seen through the eyes of Scout Finch, as her father Atticus defends a wrongly accused black man',
         img: '/kill.webp',
         price: 50
@@ -51,7 +51,7 @@ export const books = [
         description: '"Don Quixote" is a novel about a retired gentleman who becomes obsessed with chivalry books and believes in their truth, causing others to see him as insane. He sets out on adventures with his squire, Sancho Panza.',
         img: '/don.webp',
          price: 60  
-    },
+     },
 
     
 
@@ -62,7 +62,7 @@ export const books = [
         
         img: '/thinketh.jpg',
          price: 25
-    },
+     },
 
        {
         id: 8,
@@ -71,14 +71,14 @@ export const books = [
         img: '/yourself.jpg',
          price: 64 
           
-    },
+     },
     {
         id: 9,
         name: 'The Four Agreements',
         description: 'The Four Agreements draws on the long tradition of the Toltecs, an ancient, indigenous people of Mexico, to show you that we have been domesticated from childhood, guiding rules hurt us and what we can do to break and replace them.' ,
         img: '/agreement.jpg',
          price: 49  
-    },
+     },
 
     {
         id: 10,
@@ -86,7 +86,7 @@ export const books = [
         description: 'The Alchemist is a classic novel in which a boy embarks on a journey seeking treasure and on the way meets mentors, falls in love, and most importantly, learns the true importance of who he is and how to improve himself',
         img: '/alchemist.jpg',
          price: 80   
-    }
+     }
 
 
 

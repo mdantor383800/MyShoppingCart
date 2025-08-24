@@ -1,6 +1,7 @@
 
 import { useCart } from '../component/useCart';
 import { FaTrash } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 export default function BillForm() {
 
   const { cartItems, removeFromCart } = useCart();
@@ -36,6 +37,9 @@ export default function BillForm() {
       )}
       <div className='text-center mt-10'>
         <p className='text-[18px] font-semibold'>Total : ${totalPrice}</p>
+      </div>
+      <div className='text-center mt-9 font-semibold'>
+        <Link to='/' className='border-none px-5 py-2 rounded-2xl bg-cyan-400 hover:bg-cyan-500'>Checkout</Link>
       </div>
     </div>
   )

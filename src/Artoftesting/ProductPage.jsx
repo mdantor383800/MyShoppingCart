@@ -21,7 +21,7 @@ export default function ProductPage() {
   const sortedBooks = sortItem(books, sortType);
 
   return (
-    <div className='max-w-4xl mx-auto mt-[150px] mb-8'>
+    <div className='max-w-4xl mx-auto mt-[100px] mb-8'>
       <SortByName onSortChange={setSortType} />
       <ul className='w-full mx-auto sm:w-[400px] md:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-[100px] gap-y-[50px]'>
         {sortedBooks.map((book) => (
@@ -30,7 +30,7 @@ export default function ProductPage() {
               <img
                 src={book.img}
                 alt={book.name}
-                className='sm:w-full sm:h-[200px] hover:scale-105 transition-transform duration-300 rounded'
+                className='w-full h-[200px] sm:w-full sm:h-[200px] hover:scale-105 transition-transform duration-300 rounded'
               />
             </div>
             <div className='mt-3 text-center text-[18px] font-bold'>
@@ -42,11 +42,11 @@ export default function ProductPage() {
             <div>
               <Counter value={quantities[book.id] || 1} onChange={val => handleQuantityChange(book.id, val)} />
             </div>
-            
+
             <div className='flex justify-around py-5 mt-5 bg-gray-200'>
               <div className='text-[18px] font-bold'>${book.price}</div>
               <div className='bg-[#2db9c9] text-[10px] text-white font-semibold px-3 py-1 rounded-2xl hover:shadow-[0_4px_6px_-1px_rgba(107,110,150,0.5)]'>
-                
+
                 <button
                   className='cursor-pointer'
                   onClick={() => addToCart(book, quantities[book.id] || 1)}
