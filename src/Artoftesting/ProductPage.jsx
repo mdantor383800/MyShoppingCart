@@ -23,7 +23,7 @@ export default function ProductPage() {
   return (
     <div className='container max-auto mx-auto mt-[80px] mb-8'>
       <SortByName onSortChange={setSortType} />
-      <ul className='w-full mx-auto gap-y-10 md:w-full grid grid-cols-2 md:grid-cols-3 md:gap-8 xl:grid-cols-4'>
+      <ul className='w-full mx-auto gap-y-10 md:w-full grid grid-cols-1 md:grid-cols-3 md:gap-8 xl:grid-cols-4'>
         {sortedBooks.map((book) => (
           <li key={book.id} className='w-[250px] h-auto flex flex-col justify-between mx-auto shadow-xl rounded'>
             <div>
