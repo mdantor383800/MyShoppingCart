@@ -12,7 +12,7 @@ export default function SortByName({ onSortChange }) {
     }
     return (
         <div className='flex justify-end mb-4'>
-            <select className='border rounded  py-1 text-[13px]' value={sortType}
+            <select className='border rounded  py-1 text-[15px]' value={sortType}
                 onChange={handleChange}>
                 <option className='border' value="A_TO_Z">Name (A to Z)</option>
                 <option className='border' value="Z_TO_A">Name (Z to A)</option>
